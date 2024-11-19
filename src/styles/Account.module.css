@@ -1,0 +1,81 @@
+.accountPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 60px);
+  background-color: var(--dark-bg);
+}
+
+.accountContainer {
+  background: var(--dark-secondary);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(92,225,230,0.1);
+  width: 100%;
+  max-width: 400px;
+  color: var(--text-light);
+}
+
+.accountTabs {
+  display: flex;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #eee;
+}
+
+.tabButton {
+  flex: 1;
+  padding: 1rem;
+  border: none;
+  background: linear-gradient(90deg, #1a1a1a 0%, #5CE1E6 50%, #E5E6E2 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  color: var(--text-secondary);
+}
+
+.tabButton.active {
+  border-bottom: 2px solid #007bff;
+  color: #007bff;
+  background-position: right center;
+}
+
+.formGroup {
+  margin-bottom: 1rem;
+}
+
+.input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #444;
+  border-radius: 4px;
+  background-color: var(--dark-secondary);
+  color: var(--text-light);
+}
+
+.input:focus {
+  border-color: var(--theme-color);
+  box-shadow: 0 0 0 2px rgba(92,225,230,0.25);
+}
+
+.input::placeholder {
+  color: var(--text-secondary);
+}
+
+.submitButton {
+  width: 100%;
+  padding: 0.75rem;
+  background: linear-gradient(90deg, #1a1a1a 0%, #5CE1E6 50%, #E5E6E2 100%);
+  background-size: 200% auto;
+  transition: background-position 0.3s ease;
+  border: none;
+  color: var(--text-light);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submitButton:hover {
+  background-position: right center;
+} 
